@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Navy Blue as primary - #0B1746 */
+    --primary: 226 84% 16%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Gold/Yellow accent - #F9B500 */
+    --accent: 44 100% 49%;
+    --accent-foreground: 226 84% 16%;
+    
+    /* Red highlight - #ED1C24 */
+    --destructive: 357 81% 52%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Backgrounds */
+    --background: 0 0% 100%;
+    --foreground: 226 84% 16%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 226 84% 16%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 226 84% 16%;
+    
+    /* Secondary - lighter blue */
+    --secondary: 220 30% 96%;
+    --secondary-foreground: 226 84% 16%;
+    
+    /* Muted */
+    --muted: 220 20% 95%;
+    --muted-foreground: 226 20% 45%;
+    
+    /* Borders */
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 44 100% 49%;
+    
+    --radius: 0.75rem;
+    
+    /* Custom school colors */
+    --navy: 226 84% 16%;
+    --gold: 44 100% 49%;
+    --red-accent: 357 81% 52%;
+    
+    /* Gradients */
+    --gradient-navy: linear-gradient(135deg, hsl(226 84% 16%), hsl(226 84% 25%));
+    --gradient-gold: linear-gradient(135deg, hsl(44 100% 49%), hsl(44 100% 60%));
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px hsla(226, 84%, 16%, 0.08);
+    --shadow-md: 0 4px 16px hsla(226, 84%, 16%, 0.12);
+    --shadow-lg: 0 8px 32px hsla(226, 84%, 16%, 0.16);
+    --shadow-gold: 0 4px 20px hsla(44, 100%, 49%, 0.25);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --primary: 44 100% 49%;
+    --primary-foreground: 226 84% 16%;
+    
+    --accent: 44 100% 55%;
+    --accent-foreground: 226 84% 16%;
+    
+    --background: 226 84% 12%;
+    --foreground: 0 0% 98%;
+    
+    --card: 226 70% 15%;
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 226 70% 15%;
+    --popover-foreground: 0 0% 98%;
+    
+    --secondary: 226 50% 20%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 226 40% 18%;
+    --muted-foreground: 226 10% 70%;
+    
+    --destructive: 357 81% 52%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 226 40% 25%;
+    --input: 226 40% 25%;
+    --ring: 44 100% 49%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-semibold;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
