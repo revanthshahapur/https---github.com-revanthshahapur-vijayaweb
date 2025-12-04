@@ -21,8 +21,7 @@ const LoginModel = ({ isOpen, setIsOpen }) => {
             icon={<UserCog className="w-16 h-16 text-[#8B6914] mb-4" />}
             title="Admin Portal"
             description="Manage student data, update analytics, and oversee college operations."
-            linkTo="https://adminpannelvijaya.vercel.app/login" 
-
+            linkTo="https://adminpannelvijaya.vercel.app/login"
             external
             buttonText="Login as Admin"
             onClose={handleClose}
